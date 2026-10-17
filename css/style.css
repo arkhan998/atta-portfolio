@@ -132,6 +132,11 @@ section.block { padding: 3rem 0; }
 .card p { color: var(--muted); font-size: 0.95rem; }
 .card .price { display: inline-block; margin-top: 0.8rem; font-weight: 800; color: var(--blue); }
 .card .tag { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--orange); margin-bottom: 0.5rem; }
+.card-banner { display: block; width: calc(100% + 3.2rem); margin: -1.6rem -1.6rem 1rem; aspect-ratio: 16/9; object-fit: cover; border-radius: 14px 14px 0 0; }
+.ebook-banner { width: calc(100% + 3.2rem); margin: -1.6rem -1.6rem 1.1rem; border-radius: 14px 14px 0 0; padding: 1.6rem 1.2rem; text-align: center; background: radial-gradient(120% 160% at 20% 10%, rgba(255,122,26,0.35), transparent 55%), radial-gradient(120% 160% at 85% 90%, rgba(0,180,255,0.30), transparent 55%), linear-gradient(135deg, #1a1210, #0d1520); border-bottom: 1px solid var(--border); }
+.ebook-banner-emoji { display: block; font-size: 2.4rem; margin-bottom: 0.4rem; }
+.ebook-banner-title { display: block; font-weight: 800; letter-spacing: 2px; font-size: 1.05rem; background: linear-gradient(90deg, var(--orange), var(--blue)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.ebook-banner-sub { display: block; margin-top: 0.3rem; font-size: 0.8rem; color: var(--muted); }
 .card .sample-note { font-size: 0.75rem; color: var(--muted); font-style: italic; margin-top: 0.6rem; }
 
 /* ---- filter tabs (work page) ---- */
