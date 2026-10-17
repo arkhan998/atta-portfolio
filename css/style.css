@@ -60,6 +60,19 @@ header {
 .nav { display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 0; }
 .logo { font-size: 1.25rem; font-weight: 800; letter-spacing: 0.5px; text-decoration: none; color: var(--text); }
 .logo b { color: var(--orange); }
+/* ---- animated gradient nav brand (MALIK SAHIB): premium, subtle shift ---- */
+.logo-brand {
+  background: linear-gradient(90deg, var(--orange), var(--blue), var(--orange));
+  background-size: 220% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: brandShift 7s linear infinite;
+}
+@keyframes brandShift {
+  to { background-position: 220% center; }
+}
 .nav-links { display: none; list-style: none; gap: 1.4rem; }
 .nav-links a { color: var(--muted); text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: color 0.2s; }
 .nav-links a:hover, .nav-links a.active { color: var(--orange); }
@@ -166,6 +179,7 @@ footer a:hover { color: var(--orange); }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
   .bg-glow span { animation: none; }
+  .logo-brand { animation: none; }
 }
 
 /* ---- desktop ---- */

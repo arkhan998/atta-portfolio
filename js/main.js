@@ -79,7 +79,7 @@
       var type = document.getElementById("cf-type").value;
       var msg = document.getElementById("cf-msg").value.trim();
       var text =
-        "Assalam-o-Alaikum! Main " + (name || "website visitor") + " hun.\n" +
+        "Assalam-o-Alaikum! I am " + (name || "a website visitor") + ".\n" +
         "Project type: " + type + "\n" +
         "Details: " + (msg || "-");
       window.open("https://wa.me/923322964709?text=" + encodeURIComponent(text), "_blank");
