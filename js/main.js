@@ -89,4 +89,14 @@
   // Footer year
   var y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();
+
+  // Nav shadow on scroll (marquee bar scrolls away, header stays sticky)
+  var header = document.querySelector("header");
+  if (header) {
+    var onScroll = function () {
+      header.classList.toggle("scrolled", window.scrollY > 12);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
 })();
