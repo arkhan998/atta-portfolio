@@ -246,6 +246,7 @@ a:focus-visible, button:focus-visible, .tab:focus-visible { outline: 2px solid v
 @media (min-width: 720px) {
   .nav-toggle { display: none; }
   .nav-links { display: flex; margin-left: auto; }
+
   .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
   .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
   .stats { grid-template-columns: repeat(4, 1fr); }
@@ -253,3 +254,33 @@ a:focus-visible, button:focus-visible, .tab:focus-visible { outline: 2px solid v
   .contact-grid { grid-template-columns: 1fr 1.4fr; align-items: start; }
   .hero { padding: 6rem 0 4.5rem; }
 }
+
+/* ---- store (homepage): trust badges, categories, deals, products ---- */
+.trust-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin-top: 2.2rem; }
+.trust { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 0.5rem; text-align: center; }
+.trust .t-icon { display: block; font-size: 1.7rem; margin-bottom: 0.35rem; }
+.trust b { display: block; font-size: 0.88rem; }
+.trust span { font-size: 0.76rem; color: var(--muted); }
+
+.cat-card { display: flex; align-items: center; gap: 1rem; text-decoration: none; color: var(--text); }
+.cat-card:hover h3 { color: var(--orange); }
+.cat-emoji { font-size: 2.1rem; flex-shrink: 0; }
+.cat-card h3 { font-size: 1.05rem; margin: 0 0 0.2rem; transition: color 0.2s; }
+.cat-card p { font-size: 0.85rem; color: var(--muted); margin: 0; }
+
+.deal-badge { position: absolute; top: 1rem; right: 1rem; z-index: 2; background: linear-gradient(135deg, #ff3b30, #ff7a1a); color: #fff; font-weight: 800; font-size: 0.72rem; letter-spacing: 0.8px; padding: 0.4rem 0.75rem; border-radius: 999px; box-shadow: 0 4px 14px rgba(255, 60, 40, 0.45); }
+.deal-note { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #ffb020; margin-bottom: 0.9rem; }
+
+.price-row { display: flex; align-items: baseline; gap: 0.7rem; margin: 0.9rem 0 1.1rem; flex-wrap: wrap; }
+.price-now { font-size: 1.6rem; font-weight: 800; background: linear-gradient(90deg, var(--orange), var(--pink), var(--blue)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; }
+.price-was { color: var(--muted); text-decoration: line-through; font-size: 1rem; }
+.price-from { font-size: 0.85rem; color: var(--muted); font-weight: 600; }
+
+.btn-order { display: block; text-align: center; background: var(--wa-green); color: #062b14; font-weight: 800; padding: 0.8rem 1rem; border-radius: 10px; text-decoration: none; transition: transform 0.15s, box-shadow 0.2s; }
+.btn-order:hover { transform: translateY(-2px); box-shadow: 0 8px 26px rgba(37, 211, 102, 0.45); }
+
+.prod-ebook { background: radial-gradient(120% 160% at 20% 10%, rgba(255,122,26,0.42), transparent 55%), radial-gradient(120% 160% at 85% 90%, rgba(255,46,136,0.28), transparent 55%), linear-gradient(135deg, #1c1210, #141016); }
+.prod-prompts { background: radial-gradient(120% 160% at 20% 10%, rgba(255,46,136,0.40), transparent 55%), radial-gradient(120% 160% at 85% 90%, rgba(0,180,255,0.25), transparent 55%), linear-gradient(135deg, #1a1016, #101014); }
+.prod-skills { background: radial-gradient(120% 160% at 20% 10%, rgba(0,180,255,0.40), transparent 55%), radial-gradient(120% 160% at 85% 90%, rgba(0,200,180,0.22), transparent 55%), linear-gradient(135deg, #0d141c, #0e1210); }
+
+.why-icon { font-size: 2rem; display: block; margin-bottom: 0.6rem; }
